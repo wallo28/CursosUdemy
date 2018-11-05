@@ -21,6 +21,7 @@ namespace Sistema.Controllers
         // GET: Categorias
         public async Task<IActionResult> Index(string sortOrder)
         {
+            //Prueba de Sincronizacion de GitHub
             //NombreSortParm para enviar desde controlador a la vista
             //ViewData solo transfiere datos del controlados a la vista, no viceversa. Solo es validad durante la solicitud actual
             ViewData["NombreSortParm"] = String.IsNullOrEmpty(sortOrder) ? "nombre_desc" : "";
